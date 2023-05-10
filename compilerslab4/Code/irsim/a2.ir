@@ -1,0 +1,184 @@
+FUNCTION main : 
+var0  := var0 
+READ t3 
+var0  := t3 
+t3  := t3 
+var1  := var1 
+READ t6 
+var1  := t6 
+t6  := t6 
+var2  := var2 
+READ t9 
+var2  := t9 
+t9  := t9 
+var3  := var3 
+READ t12 
+var3  := t12 
+t12  := t12 
+var4  := var4 
+READ t15 
+var4  := t15 
+t15  := t15 
+var5  := var5 
+READ t18 
+var5  := t18 
+t18  := t18 
+var6  := var6 
+READ t21 
+var6  := t21 
+t21  := t21 
+var7  := var7 
+READ t24 
+var7  := t24 
+t24  := t24 
+var0  := var0 
+var2  := var2 
+IF var0 == var2 GOTO label1 
+GOTO label6 
+LABEL label6 : 
+var1  := var1 
+var3  := var3 
+IF var1 == var3 GOTO label1 
+GOTO label5 
+LABEL label5 : 
+var4  := var4 
+var6  := var6 
+IF var4 == var6 GOTO label1 
+GOTO label4 
+LABEL label4 : 
+var5  := var5 
+var7  := var7 
+IF var5 == var7 GOTO label1 
+GOTO label2 
+LABEL label1 : 
+t1  := #1 
+t34  := #0  - t1 
+WRITE t34 
+GOTO label3 
+LABEL label2 : 
+var0  := var0 
+var2  := var2 
+IF var0 < var2 GOTO label7 
+GOTO label8 
+LABEL label7 : 
+var8  := var8 
+var0  := var0 
+var8  := var0 
+var0  := var0 
+var9  := var9 
+var2  := var2 
+var9  := var2 
+var2  := var2 
+GOTO label9 
+LABEL label8 : 
+var8  := var8 
+var2  := var2 
+var8  := var2 
+var2  := var2 
+var9  := var9 
+var0  := var0 
+var9  := var0 
+var0  := var0 
+LABEL label9 : 
+var1  := var1 
+var3  := var3 
+IF var1 < var3 GOTO label10 
+GOTO label11 
+LABEL label10 : 
+var10  := var10 
+var3  := var3 
+var10  := var3 
+var3  := var3 
+var11  := var11 
+var1  := var1 
+var11  := var1 
+var1  := var1 
+GOTO label12 
+LABEL label11 : 
+var10  := var10 
+var1  := var1 
+var10  := var1 
+var1  := var1 
+var11  := var11 
+var3  := var3 
+var11  := var3 
+var3  := var3 
+LABEL label12 : 
+var4  := var4 
+var6  := var6 
+IF var4 < var6 GOTO label13 
+GOTO label14 
+LABEL label13 : 
+var12  := var12 
+var4  := var4 
+var12  := var4 
+var4  := var4 
+var13  := var13 
+var6  := var6 
+var13  := var6 
+var6  := var6 
+GOTO label15 
+LABEL label14 : 
+var12  := var12 
+var6  := var6 
+var12  := var6 
+var6  := var6 
+var13  := var13 
+var4  := var4 
+var13  := var4 
+var4  := var4 
+LABEL label15 : 
+var5  := var5 
+var7  := var7 
+IF var5 < var7 GOTO label16 
+GOTO label17 
+LABEL label16 : 
+var14  := var14 
+var7  := var7 
+var14  := var7 
+var7  := var7 
+var15  := var15 
+var5  := var5 
+var15  := var5 
+var5  := var5 
+GOTO label18 
+LABEL label17 : 
+var14  := var14 
+var5  := var5 
+var14  := var5 
+var5  := var5 
+var15  := var15 
+var7  := var7 
+var15  := var7 
+var7  := var7 
+LABEL label18 : 
+var12  := var12 
+var9  := var9 
+IF var12 >= var9 GOTO label19 
+GOTO label24 
+LABEL label24 : 
+var13  := var13 
+var8  := var8 
+IF var13 <= var8 GOTO label19 
+GOTO label23 
+LABEL label23 : 
+var15  := var15 
+var10  := var10 
+IF var15 >= var10 GOTO label19 
+GOTO label22 
+LABEL label22 : 
+var14  := var14 
+var11  := var11 
+IF var14 <= var11 GOTO label19 
+GOTO label20 
+LABEL label19 : 
+t0  := #0 
+WRITE t0 
+GOTO label21 
+LABEL label20 : 
+t1  := #1 
+WRITE t1 
+LABEL label21 : 
+LABEL label3 : 
+t0  := #0 
+RETURN t0 

@@ -1,0 +1,260 @@
+FUNCTION bit_and : 
+PARAM var0 
+PARAM var1 
+var0  := var0 
+t0  := #0 
+IF var0 == t0 GOTO label1 
+GOTO label2 
+LABEL label1 : 
+t0  := #0 
+RETURN t0 
+GOTO label3 
+LABEL label2 : 
+var1  := var1 
+RETURN var1 
+LABEL label3 : 
+FUNCTION bit_or : 
+PARAM var2 
+PARAM var3 
+var2  := var2 
+t0  := #0 
+IF var2 == t0 GOTO label4 
+GOTO label5 
+LABEL label4 : 
+var3  := var3 
+RETURN var3 
+GOTO label6 
+LABEL label5 : 
+t1  := #1 
+RETURN t1 
+LABEL label6 : 
+FUNCTION bit_not : 
+PARAM var4 
+var4  := var4 
+t0  := #0 
+IF var4 == t0 GOTO label7 
+GOTO label8 
+LABEL label7 : 
+t1  := #1 
+RETURN t1 
+GOTO label9 
+LABEL label8 : 
+t0  := #0 
+RETURN t0 
+LABEL label9 : 
+FUNCTION mod : 
+PARAM var5 
+PARAM var6 
+var5  := var5 
+var5  := var5 
+var6  := var6 
+t16  := var5  / var6 
+var6  := var6 
+t15 := t16  * var6 
+t13  := var5  - t15 
+RETURN t13 
+FUNCTION and : 
+PARAM var7 
+PARAM var8 
+t32  := #32 
+var9  := t32 
+DEC array0  128
+DEC array1  128
+DEC array2  128
+t0  := #0 
+var10  := t0 
+t0  := #0 
+var11  := t0 
+var7  := var7 
+t0  := #0 
+IF var7 <= t0 GOTO label10 
+GOTO label13 
+LABEL label13 : 
+var8  := var8 
+t0  := #0 
+IF var8 <= t0 GOTO label10 
+GOTO label11 
+LABEL label10 : 
+t0  := #0 
+RETURN t0 
+LABEL label11 : 
+LABEL label14 : 
+var10  := var10 
+var9  := var9 
+IF var10 < var9 GOTO label15 
+GOTO label16 
+LABEL label15 : 
+array0  := array0 
+var10  := var10 
+t34 := var10  * #4 
+addr2  := &array0 
+addr1  := addr2  + t34 
+t0  := #0 
+*addr1  := t0 
+t0  := t0 
+array1  := array1 
+var10  := var10 
+t40 := var10  * #4 
+addr4  := &array1 
+addr3  := addr4  + t40 
+t0  := #0 
+*addr3  := t0 
+t0  := t0 
+array2  := array2 
+var10  := var10 
+t46 := var10  * #4 
+addr6  := &array2 
+addr5  := addr6  + t46 
+t0  := #0 
+*addr5  := t0 
+t0  := t0 
+var10  := var10 
+var10  := var10 
+t1  := #1 
+t50  := var10  + t1 
+var10  := t50 
+t50  := t50 
+GOTO label14 
+LABEL label16 : 
+var10  := var10 
+t0  := #0 
+var10  := t0 
+t0  := t0 
+LABEL label17 : 
+var10  := var10 
+var9  := var9 
+IF var10 < var9 GOTO label18 
+GOTO label19 
+LABEL label18 : 
+array0  := array0 
+var10  := var10 
+t62 := var10  * #4 
+addr8  := &array0 
+addr7  := addr8  + t62 
+t2  := #2 
+ARG t2 
+var7  := var7 
+ARG var7 
+t63  := CALL mod 
+*addr7  := t63 
+t63  := t63 
+array1  := array1 
+var10  := var10 
+t70 := var10  * #4 
+addr10  := &array1 
+addr9  := addr10  + t70 
+t2  := #2 
+ARG t2 
+var8  := var8 
+ARG var8 
+t71  := CALL mod 
+*addr9  := t71 
+t71  := t71 
+var7  := var7 
+var7  := var7 
+t2  := #2 
+t76  := var7  / t2 
+var7  := t76 
+t76  := t76 
+var8  := var8 
+var8  := var8 
+t2  := #2 
+t81  := var8  / t2 
+var8  := t81 
+t81  := t81 
+var10  := var10 
+var10  := var10 
+t1  := #1 
+t86  := var10  + t1 
+var10  := t86 
+t86  := t86 
+GOTO label17 
+LABEL label19 : 
+var10  := var10 
+t0  := #0 
+var10  := t0 
+t0  := t0 
+LABEL label20 : 
+var10  := var10 
+var9  := var9 
+IF var10 < var9 GOTO label21 
+GOTO label22 
+LABEL label21 : 
+array2  := array2 
+var10  := var10 
+t98 := var10  * #4 
+addr12  := &array2 
+addr11  := addr12  + t98 
+array1  := array1 
+var10  := var10 
+t103 := var10  * #4 
+addr14  := &array1 
+addr13  := addr14  + t103 
+t104  := *addr13 
+ARG t104 
+array0  := array0 
+var10  := var10 
+t108 := var10  * #4 
+addr16  := &array0 
+addr15  := addr16  + t108 
+t109  := *addr15 
+ARG t109 
+t99  := CALL bit_and 
+*addr11  := t99 
+t99  := t99 
+var10  := var10 
+var10  := var10 
+t1  := #1 
+t112  := var10  + t1 
+var10  := t112 
+t112  := t112 
+GOTO label20 
+LABEL label22 : 
+var10  := var10 
+var9  := var9 
+t1  := #1 
+t117  := var9  - t1 
+var10  := t117 
+t117  := t117 
+LABEL label23 : 
+var10  := var10 
+t0  := #0 
+IF var10 >= t0 GOTO label24 
+GOTO label25 
+LABEL label24 : 
+var11  := var11 
+var11  := var11 
+t2  := #2 
+t125 := var11  * t2 
+array2  := array2 
+var10  := var10 
+t131 := var10  * #4 
+addr18  := &array2 
+addr17  := addr18  + t131 
+t132  := *addr17 
+t124  := t125  + t132 
+var11  := t124 
+t124  := t124 
+var10  := var10 
+var10  := var10 
+t1  := #1 
+t135  := var10  - t1 
+var10  := t135 
+t135  := t135 
+GOTO label23 
+LABEL label25 : 
+var11  := var11 
+RETURN var11 
+FUNCTION main : 
+READ t139 
+var12  := t139 
+READ t140 
+var13  := t140 
+var13  := var13 
+ARG var13 
+var12  := var12 
+ARG var12 
+t142  := CALL and 
+WRITE t142 
+t0  := #0 
+RETURN t0 

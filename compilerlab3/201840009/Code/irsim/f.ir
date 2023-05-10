@@ -1,0 +1,133 @@
+FUNCTION main :
+o_cnt := #0
+i_cnt := #0
+len := #10
+DEC tmp_value_0 40
+arr := &tmp_value_0
+result := #0
+tmp_value_1 := #0
+i_cnt := tmp_value_1
+LABEL L0 :
+tmp_value_2 := i_cnt
+tmp_value_3 := len
+IF tmp_value_2 < tmp_value_3 GOTO L1
+GOTO L2
+LABEL L1 :
+tmp_value_4 := #0
+tmp_value_5 := arr
+tmp_value_6 := i_cnt
+tmp_value_7 := tmp_value_6 * #4
+tmp_value_5 := tmp_value_5 + tmp_value_7
+*tmp_value_5 := tmp_value_4
+tmp_value_9 := i_cnt
+tmp_value_10 := #1
+tmp_value_8 := tmp_value_9 + tmp_value_10
+i_cnt := tmp_value_8
+GOTO L0
+LABEL L2 :
+tmp_value_11 := #0
+o_cnt := tmp_value_11
+LABEL L3 :
+tmp_value_12 := o_cnt
+tmp_value_13 := #3
+IF tmp_value_12 < tmp_value_13 GOTO L4
+GOTO L5
+LABEL L4 :
+READ tmp_value_14
+i := tmp_value_14
+READ tmp_value_15
+j := tmp_value_15
+tmp_value_16 := i
+tmp_value_17 := #10
+IF tmp_value_16 > tmp_value_17 GOTO L6
+GOTO L7
+LABEL L6 :
+tmp_value_21 := #1
+tmp_value_22 := i
+tmp_value_19 := tmp_value_21 + tmp_value_22
+tmp_value_25 := i
+tmp_value_26 := #10
+tmp_value_23 := tmp_value_25 / tmp_value_26
+tmp_value_24 := #10
+tmp_value_20 := tmp_value_23 * tmp_value_24
+tmp_value_18 := tmp_value_19 - tmp_value_20
+i := tmp_value_18
+LABEL L7 :
+tmp_value_27 := j
+tmp_value_28 := #10
+IF tmp_value_27 > tmp_value_28 GOTO L8
+GOTO L9
+LABEL L8 :
+tmp_value_32 := #2
+tmp_value_33 := j
+tmp_value_30 := tmp_value_32 + tmp_value_33
+tmp_value_36 := j
+tmp_value_37 := #10
+tmp_value_34 := tmp_value_36 / tmp_value_37
+tmp_value_35 := #10
+tmp_value_31 := tmp_value_34 * tmp_value_35
+tmp_value_29 := tmp_value_30 - tmp_value_31
+j := tmp_value_29
+LABEL L9 :
+tmp_value_38 := #0
+i_cnt := tmp_value_38
+LABEL L10 :
+tmp_value_39 := i_cnt
+tmp_value_40 := len
+IF tmp_value_39 < tmp_value_40 GOTO L11
+GOTO L12
+LABEL L11 :
+tmp_value_48 := arr
+tmp_value_49 := i_cnt
+tmp_value_50 := tmp_value_49 * #4
+tmp_value_48 := tmp_value_48 + tmp_value_50
+tmp_value_46 := *tmp_value_48
+tmp_value_47 := #2
+tmp_value_44 := tmp_value_46 / tmp_value_47
+tmp_value_45 := i
+tmp_value_42 := tmp_value_44 + tmp_value_45
+tmp_value_43 := j
+tmp_value_41 := tmp_value_42 - tmp_value_43
+tmp_value_51 := arr
+tmp_value_52 := i_cnt
+tmp_value_53 := tmp_value_52 * #4
+tmp_value_51 := tmp_value_51 + tmp_value_53
+*tmp_value_51 := tmp_value_41
+tmp_value_55 := i_cnt
+tmp_value_56 := #1
+tmp_value_54 := tmp_value_55 + tmp_value_56
+i_cnt := tmp_value_54
+GOTO L10
+LABEL L12 :
+tmp_value_58 := o_cnt
+tmp_value_59 := #1
+tmp_value_57 := tmp_value_58 + tmp_value_59
+o_cnt := tmp_value_57
+GOTO L3
+LABEL L5 :
+tmp_value_60 := #0
+i_cnt := tmp_value_60
+LABEL L13 :
+tmp_value_61 := i_cnt
+tmp_value_62 := len
+IF tmp_value_61 < tmp_value_62 GOTO L14
+GOTO L15
+LABEL L14 :
+tmp_value_64 := result
+tmp_value_66 := arr
+tmp_value_67 := i_cnt
+tmp_value_68 := tmp_value_67 * #4
+tmp_value_66 := tmp_value_66 + tmp_value_68
+tmp_value_65 := *tmp_value_66
+tmp_value_63 := tmp_value_64 + tmp_value_65
+result := tmp_value_63
+tmp_value_70 := i_cnt
+tmp_value_71 := #1
+tmp_value_69 := tmp_value_70 + tmp_value_71
+i_cnt := tmp_value_69
+GOTO L13
+LABEL L15 :
+tmp_value_72 := result
+WRITE tmp_value_72
+tmp_value_73 := #0
+RETURN tmp_value_73

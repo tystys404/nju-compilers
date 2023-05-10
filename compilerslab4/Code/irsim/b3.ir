@@ -1,0 +1,482 @@
+FUNCTION main : 
+t5  := #5 
+var0  := t5 
+DEC array0  20
+DEC array1  20
+var1  := var1 
+t0  := #0 
+var1  := t0 
+t0  := t0 
+LABEL label1 : 
+var1  := var1 
+var0  := var0 
+IF var1 < var0 GOTO label2 
+GOTO label3 
+LABEL label2 : 
+array0  := array0 
+var1  := var1 
+t11 := var1  * #4 
+addr2  := &array0 
+addr1  := addr2  + t11 
+READ t12 
+*addr1  := t12 
+t12  := t12 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t15  := var1  + t1 
+var1  := t15 
+t15  := t15 
+GOTO label1 
+LABEL label3 : 
+var2  := var2 
+t1  := #1 
+var2  := t1 
+t1  := t1 
+LABEL label4 : 
+var2  := var2 
+var0  := var0 
+IF var2 < var0 GOTO label5 
+GOTO label6 
+LABEL label5 : 
+var1  := var1 
+t0  := #0 
+var1  := t0 
+t0  := t0 
+LABEL label7 : 
+var1  := var1 
+var0  := var0 
+t2  := #2 
+var2  := var2 
+t29 := t2  * var2 
+t27  := var0  - t29 
+IF var1 <= t27 GOTO label8 
+GOTO label9 
+LABEL label8 : 
+var3  := var3 
+var1  := var1 
+var3  := var1 
+var1  := var1 
+var4  := var4 
+var3  := var3 
+var2  := var2 
+t37  := var3  + var2 
+var4  := t37 
+t37  := t37 
+var5  := var5 
+var3  := var3 
+var5  := var3 
+var3  := var3 
+var6  := var6 
+var4  := var4 
+var6  := var4 
+var4  := var4 
+var7  := var7 
+var6  := var6 
+var2  := var2 
+t48  := var6  + var2 
+var7  := t48 
+t48  := t48 
+var8  := var8 
+var6  := var6 
+var8  := var6 
+var6  := var6 
+LABEL label10 : 
+var5  := var5 
+var4  := var4 
+IF var5 < var4 GOTO label13 
+GOTO label12 
+LABEL label13 : 
+var8  := var8 
+var7  := var7 
+IF var8 < var7 GOTO label11 
+GOTO label12 
+LABEL label11 : 
+array0  := array0 
+var5  := var5 
+t61 := var5  * #4 
+addr4  := &array0 
+addr3  := addr4  + t61 
+t62  := *addr3 
+array0  := array0 
+var8  := var8 
+t66 := var8  * #4 
+addr6  := &array0 
+addr5  := addr6  + t66 
+t67  := *addr5 
+IF t62 < t67 GOTO label14 
+GOTO label15 
+LABEL label14 : 
+array1  := array1 
+var1  := var1 
+t72 := var1  * #4 
+addr8  := &array1 
+addr7  := addr8  + t72 
+array0  := array0 
+var5  := var5 
+t76 := var5  * #4 
+addr10  := &array0 
+addr9  := addr10  + t76 
+addr9  := addr9 
+var5  := var5 
+var5  := var5 
+t1  := #1 
+t79  := var5  + t1 
+var5  := t79 
+t79  := t79 
+GOTO label16 
+LABEL label15 : 
+array1  := array1 
+var1  := var1 
+t86 := var1  * #4 
+addr12  := &array1 
+addr11  := addr12  + t86 
+array0  := array0 
+var8  := var8 
+t90 := var8  * #4 
+addr14  := &array0 
+addr13  := addr14  + t90 
+addr13  := addr13 
+var8  := var8 
+var8  := var8 
+t1  := #1 
+t93  := var8  + t1 
+var8  := t93 
+t93  := t93 
+LABEL label16 : 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t98  := var1  + t1 
+var1  := t98 
+t98  := t98 
+GOTO label10 
+LABEL label12 : 
+LABEL label17 : 
+var5  := var5 
+var4  := var4 
+IF var5 < var4 GOTO label18 
+GOTO label19 
+LABEL label18 : 
+array1  := array1 
+var1  := var1 
+t107 := var1  * #4 
+addr16  := &array1 
+addr15  := addr16  + t107 
+array0  := array0 
+var5  := var5 
+t111 := var5  * #4 
+addr18  := &array0 
+addr17  := addr18  + t111 
+addr17  := addr17 
+var5  := var5 
+var5  := var5 
+t1  := #1 
+t114  := var5  + t1 
+var5  := t114 
+t114  := t114 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t119  := var1  + t1 
+var1  := t119 
+t119  := t119 
+GOTO label17 
+LABEL label19 : 
+LABEL label20 : 
+var8  := var8 
+var7  := var7 
+IF var8 < var7 GOTO label21 
+GOTO label22 
+LABEL label21 : 
+array1  := array1 
+var1  := var1 
+t128 := var1  * #4 
+addr20  := &array1 
+addr19  := addr20  + t128 
+array0  := array0 
+var8  := var8 
+t132 := var8  * #4 
+addr22  := &array0 
+addr21  := addr22  + t132 
+addr21  := addr21 
+var8  := var8 
+var8  := var8 
+t1  := #1 
+t135  := var8  + t1 
+var8  := t135 
+t135  := t135 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t140  := var1  + t1 
+var1  := t140 
+t140  := t140 
+GOTO label20 
+LABEL label22 : 
+GOTO label7 
+LABEL label9 : 
+var1  := var1 
+var2  := var2 
+t143  := var1  + var2 
+var0  := var0 
+IF t143 < var0 GOTO label23 
+GOTO label24 
+LABEL label23 : 
+var3  := var3 
+var1  := var1 
+var3  := var1 
+var1  := var1 
+var4  := var4 
+var3  := var3 
+var2  := var2 
+t152  := var3  + var2 
+var4  := t152 
+t152  := t152 
+var5  := var5 
+var3  := var3 
+var5  := var3 
+var3  := var3 
+var6  := var6 
+var4  := var4 
+var6  := var4 
+var4  := var4 
+var7  := var7 
+var0  := var0 
+var7  := var0 
+var0  := var0 
+var8  := var8 
+var6  := var6 
+var8  := var6 
+var6  := var6 
+LABEL label26 : 
+var5  := var5 
+var4  := var4 
+IF var5 < var4 GOTO label29 
+GOTO label28 
+LABEL label29 : 
+var8  := var8 
+var7  := var7 
+IF var8 < var7 GOTO label27 
+GOTO label28 
+LABEL label27 : 
+array0  := array0 
+var5  := var5 
+t174 := var5  * #4 
+addr24  := &array0 
+addr23  := addr24  + t174 
+t175  := *addr23 
+array0  := array0 
+var8  := var8 
+t179 := var8  * #4 
+addr26  := &array0 
+addr25  := addr26  + t179 
+t180  := *addr25 
+IF t175 < t180 GOTO label30 
+GOTO label31 
+LABEL label30 : 
+array1  := array1 
+var1  := var1 
+t185 := var1  * #4 
+addr28  := &array1 
+addr27  := addr28  + t185 
+array0  := array0 
+var5  := var5 
+t189 := var5  * #4 
+addr30  := &array0 
+addr29  := addr30  + t189 
+addr29  := addr29 
+var5  := var5 
+var5  := var5 
+t1  := #1 
+t192  := var5  + t1 
+var5  := t192 
+t192  := t192 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t197  := var1  + t1 
+var1  := t197 
+t197  := t197 
+GOTO label32 
+LABEL label31 : 
+array1  := array1 
+var1  := var1 
+t204 := var1  * #4 
+addr32  := &array1 
+addr31  := addr32  + t204 
+array0  := array0 
+var8  := var8 
+t208 := var8  * #4 
+addr34  := &array0 
+addr33  := addr34  + t208 
+addr33  := addr33 
+var8  := var8 
+var8  := var8 
+t1  := #1 
+t211  := var8  + t1 
+var8  := t211 
+t211  := t211 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t216  := var1  + t1 
+var1  := t216 
+t216  := t216 
+LABEL label32 : 
+GOTO label26 
+LABEL label28 : 
+LABEL label33 : 
+var5  := var5 
+var4  := var4 
+IF var5 < var4 GOTO label34 
+GOTO label35 
+LABEL label34 : 
+array1  := array1 
+var1  := var1 
+t225 := var1  * #4 
+addr36  := &array1 
+addr35  := addr36  + t225 
+array0  := array0 
+var5  := var5 
+t229 := var5  * #4 
+addr38  := &array0 
+addr37  := addr38  + t229 
+addr37  := addr37 
+var5  := var5 
+var5  := var5 
+t1  := #1 
+t232  := var5  + t1 
+var5  := t232 
+t232  := t232 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t237  := var1  + t1 
+var1  := t237 
+t237  := t237 
+GOTO label33 
+LABEL label35 : 
+LABEL label36 : 
+var8  := var8 
+var7  := var7 
+IF var8 < var7 GOTO label37 
+GOTO label38 
+LABEL label37 : 
+array1  := array1 
+var1  := var1 
+t246 := var1  * #4 
+addr40  := &array1 
+addr39  := addr40  + t246 
+array0  := array0 
+var8  := var8 
+t250 := var8  * #4 
+addr42  := &array0 
+addr41  := addr42  + t250 
+addr41  := addr41 
+var8  := var8 
+var8  := var8 
+t1  := #1 
+t253  := var8  + t1 
+var8  := t253 
+t253  := t253 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t258  := var1  + t1 
+var1  := t258 
+t258  := t258 
+GOTO label36 
+LABEL label38 : 
+GOTO label25 
+LABEL label24 : 
+LABEL label39 : 
+var1  := var1 
+var0  := var0 
+IF var1 < var0 GOTO label40 
+GOTO label41 
+LABEL label40 : 
+array1  := array1 
+var1  := var1 
+t267 := var1  * #4 
+addr44  := &array1 
+addr43  := addr44  + t267 
+array0  := array0 
+var1  := var1 
+t271 := var1  * #4 
+addr46  := &array0 
+addr45  := addr46  + t271 
+addr45  := addr45 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t274  := var1  + t1 
+var1  := t274 
+t274  := t274 
+GOTO label39 
+LABEL label41 : 
+LABEL label25 : 
+var1  := var1 
+t0  := #0 
+var1  := t0 
+t0  := t0 
+LABEL label42 : 
+var1  := var1 
+var0  := var0 
+IF var1 < var0 GOTO label43 
+GOTO label44 
+LABEL label43 : 
+array0  := array0 
+var1  := var1 
+t286 := var1  * #4 
+addr48  := &array0 
+addr47  := addr48  + t286 
+array1  := array1 
+var1  := var1 
+t290 := var1  * #4 
+addr50  := &array1 
+addr49  := addr50  + t290 
+addr49  := addr49 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t293  := var1  + t1 
+var1  := t293 
+t293  := t293 
+GOTO label42 
+LABEL label44 : 
+var2  := var2 
+var2  := var2 
+t2  := #2 
+t298 := var2  * t2 
+var2  := t298 
+t298  := t298 
+GOTO label4 
+LABEL label6 : 
+var1  := var1 
+t0  := #0 
+var1  := t0 
+t0  := t0 
+LABEL label45 : 
+var1  := var1 
+var0  := var0 
+IF var1 < var0 GOTO label46 
+GOTO label47 
+LABEL label46 : 
+array0  := array0 
+var1  := var1 
+t310 := var1  * #4 
+addr52  := &array0 
+addr51  := addr52  + t310 
+t311  := *addr51 
+WRITE t311 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t314  := var1  + t1 
+var1  := t314 
+t314  := t314 
+GOTO label45 
+LABEL label47 : 
+t0  := #0 
+RETURN t0 

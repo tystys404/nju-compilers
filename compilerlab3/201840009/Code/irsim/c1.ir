@@ -1,0 +1,157 @@
+FUNCTION fact : 
+PARAM var0 
+var0  := var0 
+t0  := #0 
+IF var0 <= t0 GOTO label1 
+GOTO label2 
+LABEL label1 : 
+t1  := #1 
+RETURN t1 
+GOTO label3 
+LABEL label2 : 
+var0  := var0 
+t1  := #1 
+t6  := var0  - t1 
+ARG t6 
+t5  := CALL fact 
+var0  := var0 
+t4 := t5  * var0 
+RETURN t4 
+LABEL label3 : 
+FUNCTION isqrt : 
+PARAM var1 
+t0  := #0 
+var2  := t0 
+LABEL label4 : 
+var2  := var2 
+var1  := var1 
+IF var2 < var1 GOTO label5 
+GOTO label6 
+LABEL label5 : 
+var2  := var2 
+var2  := var2 
+t13 := var2  * var2 
+var1  := var1 
+IF t13 <= var1 GOTO label10 
+GOTO label8 
+LABEL label10 : 
+var2  := var2 
+t1  := #1 
+t18  := var2  + t1 
+var2  := var2 
+t1  := #1 
+t21  := var2  + t1 
+t17 := t18  * t21 
+var1  := var1 
+IF t17 > var1 GOTO label7 
+GOTO label8 
+LABEL label7 : 
+var2  := var2 
+RETURN var2 
+LABEL label8 : 
+var2  := var2 
+var2  := var2 
+t1  := #1 
+t28  := var2  + t1 
+var2  := t28 
+t28  := t28 
+GOTO label4 
+LABEL label6 : 
+t1  := #1 
+t31  := #0  - t1 
+RETURN t31 
+FUNCTION mod : 
+PARAM var3 
+PARAM var4 
+var3  := var3 
+t0  := #0 
+IF var3 < t0 GOTO label11 
+GOTO label14 
+LABEL label14 : 
+var4  := var4 
+t0  := #0 
+IF var4 <= t0 GOTO label11 
+GOTO label12 
+LABEL label11 : 
+t1  := #1 
+t37  := #0  - t1 
+RETURN t37 
+GOTO label13 
+LABEL label12 : 
+var3  := var3 
+var3  := var3 
+var4  := var4 
+t42  := var3  / var4 
+var4  := var4 
+t41 := t42  * var4 
+t39  := var3  - t41 
+RETURN t39 
+LABEL label13 : 
+FUNCTION is_prime : 
+PARAM var5 
+t2  := #2 
+var6  := t2 
+var5  := var5 
+ARG var5 
+t47  := CALL isqrt 
+var7  := t47 
+LABEL label15 : 
+var6  := var6 
+var7  := var7 
+IF var6 <= var7 GOTO label16 
+GOTO label17 
+LABEL label16 : 
+var6  := var6 
+ARG var6 
+var5  := var5 
+ARG var5 
+t51  := CALL mod 
+t0  := #0 
+IF t51 == t0 GOTO label18 
+GOTO label19 
+LABEL label18 : 
+t0  := #0 
+RETURN t0 
+LABEL label19 : 
+var6  := var6 
+var6  := var6 
+t1  := #1 
+t58  := var6  + t1 
+var6  := t58 
+t58  := t58 
+GOTO label15 
+LABEL label17 : 
+t1  := #1 
+RETURN t1 
+FUNCTION main : 
+t2  := #2 
+var8  := t2 
+READ t63 
+var9  := t63 
+LABEL label21 : 
+var8  := var8 
+var9  := var9 
+ARG var9 
+t65  := CALL fact 
+IF var8 < t65 GOTO label22 
+GOTO label23 
+LABEL label22 : 
+var8  := var8 
+ARG var8 
+t67  := CALL is_prime 
+IF t67 != #0 GOTO label24 
+GOTO label25 
+LABEL label24 : 
+var8  := var8 
+WRITE var8 
+LABEL label25 : 
+var8  := var8 
+var8  := var8 
+t1  := #1 
+t73  := var8  + t1 
+var8  := t73 
+t73  := t73 
+GOTO label21 
+LABEL label23 : 
+t0  := #0 
+RETURN t0 

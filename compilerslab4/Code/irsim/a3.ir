@@ -1,0 +1,120 @@
+FUNCTION main : 
+t0  := #0 
+var1  := t0 
+t0  := #0 
+var2  := t0 
+t0  := #0 
+var3  := t0 
+t0  := #0 
+var4  := t0 
+t1  := #1 
+var5  := t1 
+t1  := #1 
+var6  := t1 
+var0  := var0 
+READ t9 
+var0  := t9 
+t9  := t9 
+var0  := var0 
+t0  := #0 
+IF var0 <= t0 GOTO label1 
+GOTO label2 
+LABEL label1 : 
+t1  := #1 
+t13  := #0  - t1 
+WRITE t13 
+t0  := #0 
+RETURN t0 
+LABEL label2 : 
+LABEL label4 : 
+var2  := var2 
+var0  := var0 
+IF var2 < var0 GOTO label5 
+GOTO label6 
+LABEL label5 : 
+var1  := var1 
+var1  := var1 
+t1  := #1 
+t20  := var1  + t1 
+var1  := t20 
+t20  := t20 
+var2  := var2 
+var2  := var2 
+var1  := var1 
+t25  := var2  + var1 
+var2  := t25 
+t25  := t25 
+GOTO label4 
+LABEL label6 : 
+var3  := var3 
+var0  := var0 
+var2  := var2 
+var1  := var1 
+t32  := var2  - var1 
+t30  := var0  - t32 
+var3  := t30 
+t30  := t30 
+var4  := var4 
+var1  := var1 
+var4  := var1 
+var1  := var1 
+var4  := var4 
+WRITE var4 
+var3  := var3 
+WRITE var3 
+var2  := var2 
+t0  := #0 
+var2  := t0 
+t0  := t0 
+LABEL label7 : 
+var2  := var2 
+var3  := var3 
+IF var2 < var3 GOTO label8 
+GOTO label9 
+LABEL label8 : 
+var5  := var5 
+var5  := var5 
+var4  := var4 
+t49 := var5  * var4 
+var5  := t49 
+t49  := t49 
+var4  := var4 
+var4  := var4 
+t1  := #1 
+t54  := var4  - t1 
+var4  := t54 
+t54  := t54 
+var2  := var2 
+var2  := var2 
+t1  := #1 
+t59  := var2  + t1 
+var2  := t59 
+t59  := t59 
+GOTO label7 
+LABEL label9 : 
+LABEL label10 : 
+var3  := var3 
+t0  := #0 
+IF var3 > t0 GOTO label11 
+GOTO label12 
+LABEL label11 : 
+var6  := var6 
+var6  := var6 
+var3  := var3 
+t66 := var6  * var3 
+var6  := t66 
+t66  := t66 
+var3  := var3 
+var3  := var3 
+t1  := #1 
+t71  := var3  - t1 
+var3  := t71 
+t71  := t71 
+GOTO label10 
+LABEL label12 : 
+var5  := var5 
+var6  := var6 
+t75  := var5  / var6 
+WRITE t75 
+t0  := #0 
+RETURN t0 

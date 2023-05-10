@@ -1,0 +1,206 @@
+FUNCTION main : 
+t3  := #3 
+var0  := t3 
+DEC array0  12
+t100  := #100 
+var1  := t100 
+DEC array1  404
+t1  := #1 
+var2  := t1 
+t0  := #0 
+var3  := t0 
+t0  := #0 
+var4  := t0 
+LABEL label1 : 
+var3  := var3 
+var0  := var0 
+IF var3 < var0 GOTO label2 
+GOTO label3 
+LABEL label2 : 
+array0  := array0 
+var3  := var3 
+t12 := var3  * #4 
+addr2  := &array0 
+addr1  := addr2  + t12 
+READ t13 
+*addr1  := t13 
+t13  := t13 
+array0  := array0 
+var3  := var3 
+t17 := var3  * #4 
+addr4  := &array0 
+addr3  := addr4  + t17 
+t18  := *addr3 
+t0  := #0 
+IF t18 <= t0 GOTO label4 
+GOTO label5 
+LABEL label4 : 
+var2  := var2 
+t0  := #0 
+var2  := t0 
+t0  := t0 
+LABEL label5 : 
+var3  := var3 
+var3  := var3 
+t1  := #1 
+t25  := var3  + t1 
+var3  := t25 
+t25  := t25 
+GOTO label1 
+LABEL label3 : 
+var2  := var2 
+t0  := #0 
+IF var2 == t0 GOTO label7 
+GOTO label8 
+LABEL label7 : 
+t1  := #1 
+t31  := #0  - t1 
+WRITE t31 
+t0  := #0 
+RETURN t0 
+LABEL label8 : 
+array1  := array1 
+t0  := #0 
+t38 := t0  * #4 
+addr6  := &array1 
+addr5  := addr6  + t38 
+t0  := #0 
+*addr5  := t0 
+t0  := t0 
+var3  := var3 
+t1  := #1 
+var3  := t1 
+t1  := t1 
+LABEL label10 : 
+var3  := var3 
+var1  := var1 
+t1  := #1 
+t44  := var1  + t1 
+IF var3 < t44 GOTO label11 
+GOTO label12 
+LABEL label11 : 
+array1  := array1 
+var3  := var3 
+t51 := var3  * #4 
+addr8  := &array1 
+addr7  := addr8  + t51 
+var1  := var1 
+t1  := #1 
+t52  := var1  + t1 
+*addr7  := t52 
+t52  := t52 
+var3  := var3 
+var3  := var3 
+t1  := #1 
+t57  := var3  + t1 
+var3  := t57 
+t57  := t57 
+GOTO label10 
+LABEL label12 : 
+var3  := var3 
+t0  := #0 
+var3  := t0 
+t0  := t0 
+LABEL label13 : 
+var3  := var3 
+var0  := var0 
+IF var3 < var0 GOTO label14 
+GOTO label15 
+LABEL label14 : 
+array0  := array0 
+var3  := var3 
+t68 := var3  * #4 
+addr10  := &array0 
+addr9  := addr10  + t68 
+t69  := *addr9 
+var5  := t69 
+var4  := var4 
+var5  := var5 
+var4  := var5 
+var5  := var5 
+LABEL label16 : 
+var4  := var4 
+var1  := var1 
+t1  := #1 
+t74  := var1  + t1 
+IF var4 < t74 GOTO label17 
+GOTO label18 
+LABEL label17 : 
+array1  := array1 
+var4  := var4 
+var5  := var5 
+t80  := var4  - var5 
+t83 := t80  * #4 
+addr12  := &array1 
+addr11  := addr12  + t83 
+t84  := *addr11 
+t1  := #1 
+t77  := t84  + t1 
+array1  := array1 
+var4  := var4 
+t89 := var4  * #4 
+addr14  := &array1 
+addr13  := addr14  + t89 
+t90  := *addr13 
+IF t77 < t90 GOTO label19 
+GOTO label20 
+LABEL label19 : 
+array1  := array1 
+var4  := var4 
+t95 := var4  * #4 
+addr16  := &array1 
+addr15  := addr16  + t95 
+array1  := array1 
+var4  := var4 
+var5  := var5 
+t99  := var4  - var5 
+t102 := t99  * #4 
+addr18  := &array1 
+addr17  := addr18  + t102 
+t103  := *addr17 
+t1  := #1 
+t96  := t103  + t1 
+*addr15  := t96 
+t96  := t96 
+LABEL label20 : 
+var4  := var4 
+var4  := var4 
+t1  := #1 
+t107  := var4  + t1 
+var4  := t107 
+t107  := t107 
+GOTO label16 
+LABEL label18 : 
+var3  := var3 
+var3  := var3 
+t1  := #1 
+t112  := var3  + t1 
+var3  := t112 
+t112  := t112 
+GOTO label13 
+LABEL label15 : 
+array1  := array1 
+var1  := var1 
+t118 := var1  * #4 
+addr20  := &array1 
+addr19  := addr20  + t118 
+t119  := *addr19 
+var1  := var1 
+IF t119 > var1 GOTO label22 
+GOTO label23 
+LABEL label22 : 
+t1  := #1 
+t122  := #0  - t1 
+WRITE t122 
+GOTO label24 
+LABEL label23 : 
+array1  := array1 
+var1  := var1 
+t128 := var1  * #4 
+addr22  := &array1 
+addr21  := addr22  + t128 
+t129  := *addr21 
+WRITE t129 
+LABEL label24 : 
+t0  := #0 
+RETURN t0 

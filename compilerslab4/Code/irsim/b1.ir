@@ -1,0 +1,143 @@
+FUNCTION mod : 
+PARAM var0 
+PARAM var1 
+var0  := var0 
+var0  := var0 
+var1  := var1 
+t4  := var0  / var1 
+var1  := var1 
+t3 := t4  * var1 
+t1  := var0  - t3 
+RETURN t1 
+FUNCTION quick_power_mod : 
+PARAM var2 
+PARAM var3 
+PARAM var4 
+t1  := #1 
+var5  := t1 
+var2  := var2 
+t0  := #0 
+IF var2 <= t0 GOTO label1 
+GOTO label5 
+LABEL label5 : 
+var3  := var3 
+t0  := #0 
+IF var3 <= t0 GOTO label1 
+GOTO label4 
+LABEL label4 : 
+var4  := var4 
+t0  := #0 
+IF var4 <= t0 GOTO label1 
+GOTO label2 
+LABEL label1 : 
+t1  := #1 
+t15  := #0  - t1 
+RETURN t15 
+GOTO label3 
+LABEL label2 : 
+var2  := var2 
+var4  := var4 
+ARG var4 
+var2  := var2 
+ARG var2 
+t19  := CALL mod 
+var2  := t19 
+t19  := t19 
+LABEL label6 : 
+var3  := var3 
+t0  := #0 
+IF var3 != t0 GOTO label7 
+GOTO label8 
+LABEL label7 : 
+t2  := #2 
+ARG t2 
+var3  := var3 
+ARG var3 
+t24  := CALL mod 
+t1  := #1 
+IF t24 == t1 GOTO label9 
+GOTO label10 
+LABEL label9 : 
+var5  := var5 
+var4  := var4 
+ARG var4 
+var5  := var5 
+var2  := var2 
+t32 := var5  * var2 
+ARG t32 
+t30  := CALL mod 
+var5  := t30 
+t30  := t30 
+LABEL label10 : 
+var3  := var3 
+var3  := var3 
+t2  := #2 
+t37  := var3  / t2 
+var3  := t37 
+t37  := t37 
+var2  := var2 
+var4  := var4 
+ARG var4 
+var2  := var2 
+var2  := var2 
+t44 := var2  * var2 
+ARG t44 
+t42  := CALL mod 
+var2  := t42 
+t42  := t42 
+GOTO label6 
+LABEL label8 : 
+var5  := var5 
+RETURN var5 
+LABEL label3 : 
+FUNCTION main : 
+DEC array0  12
+t0  := #0 
+var6  := t0 
+LABEL label12 : 
+var6  := var6 
+t3  := #3 
+IF var6 < t3 GOTO label13 
+GOTO label14 
+LABEL label13 : 
+array0  := array0 
+var6  := var6 
+t55 := var6  * #4 
+addr2  := &array0 
+addr1  := addr2  + t55 
+READ t56 
+*addr1  := t56 
+t56  := t56 
+var6  := var6 
+var6  := var6 
+t1  := #1 
+t59  := var6  + t1 
+var6  := t59 
+t59  := t59 
+GOTO label12 
+LABEL label14 : 
+array0  := array0 
+t2  := #2 
+t67 := t2  * #4 
+addr4  := &array0 
+addr3  := addr4  + t67 
+t68  := *addr3 
+ARG t68 
+array0  := array0 
+t1  := #1 
+t72 := t1  * #4 
+addr6  := &array0 
+addr5  := addr6  + t72 
+t73  := *addr5 
+ARG t73 
+array0  := array0 
+t0  := #0 
+t77 := t0  * #4 
+addr8  := &array0 
+addr7  := addr8  + t77 
+t78  := *addr7 
+ARG t78 
+t63  := CALL quick_power_mod 
+WRITE t63 
+t0  := #0 
+RETURN t0 

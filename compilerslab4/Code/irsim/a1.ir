@@ -1,0 +1,69 @@
+FUNCTION main : 
+t1  := #1 
+var0  := t1 
+t11  := #11 
+var1  := t11 
+t39  := #39 
+var2  := t39 
+t0  := #0 
+var3  := t0 
+var0  := var0 
+var0  := var0 
+t9  := #0  - var0 
+var2  := var2 
+t8  := t9  + var2 
+t17  := #17 
+var0  := var0 
+t13 := t17  * var0 
+t12  := #0  - t13 
+t7  := t8  + t12 
+var0  := t7 
+t7  := t7 
+var0  := var0 
+WRITE var0 
+var1  := var1 
+t11  := #11 
+var1  := var1 
+t21 := t11  * var1 
+var2  := var2 
+var0  := var0 
+var0  := var0 
+t27 := var0  * var0 
+t25  := var2  + t27 
+var0  := var0 
+t24 := t25  * var0 
+t20  := t21  - t24 
+var1  := t20 
+t20  := t20 
+var1  := var1 
+WRITE var1 
+var2  := var2 
+var0  := var0 
+var0  := var0 
+var1  := var1 
+t38  := var0  / var1 
+t36 := var0  * t38 
+var2  := var2 
+t35  := t36  + var2 
+var2  := t35 
+t35  := t35 
+var2  := var2 
+WRITE var2 
+var3  := var3 
+t4  := #4 
+var0  := var0 
+t48 := t4  * var0 
+var1  := var1 
+t17  := #17 
+t51  := var1  / t17 
+t47  := t48  + t51 
+var0  := var0 
+var2  := var2 
+t54 := var0  * var2 
+t46  := t47  + t54 
+var3  := t46 
+t46  := t46 
+var3  := var3 
+WRITE var3 
+t0  := #0 
+RETURN t0 
